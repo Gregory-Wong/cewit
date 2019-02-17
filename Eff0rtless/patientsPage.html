@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="https://softheonworkshop.azureedge.net/beta-2/workshop.blue.min.css
+" rel="stylesheet" />
+  </head>
+  <body>
+ <nav sws-navbar role="navigation">
+  <a href="#" sws-nav__logo>
+      <!--Change logo picture -->
+      <img src="https://developer.softheon.io/workshop/img/logo.png" alt="logo">
+  </a>
+  <ul>
+      <li>
+          <a sws-nav-link href="Login.html">LogOut</a>
+      </li>
+    </ul>
+  </nav>
+  <center><h1 style = "font-family:vermont;font-size:16px;font-style:bold;">Patients</h1></center>
+  <div flex-container full-width border-box>
+    <div sws-form full-width>
+        <input sws-form__input type="text" name="exampleform" id="example" onkeyup="this.setAttribute('value', this.value);">
+        <label sws-form__label for="example">Search</label>
+        <div sws-form__bar></div>
+    </div>
+    <button sws-button--dark m-t-25>Submit</button>
+  </div>
+    <table sws-table full-width>
+      <tr>
+        <th><font size="5">Name</th>
+        <th><font size="5">Date of Birth</th>
+      </tr>
+      <tr>
+        <td><a href="patient.html" sws-link--dark>Nye, Bob</a></td>
+        <td>January 11th, 1945</td>
+      </tr>
+      <tr>
+        <td><a href="#" sws-link--dark>Marley, Bill</a></td>
+        <td>Febuary 23rd, 1934</td>
+      </tr>
+      <tr>
+        <td><a href="#" sws-link--dark>Shahit, Muhamid</a></td>
+        <td>April 26th, 1948</td>
+      </tr>
+    </table>
+   <button sws-button--jet>Add Patient</button>
+  <script src="script.js"></script>
+  </body>
+</html>
