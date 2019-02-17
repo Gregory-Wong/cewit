@@ -3,21 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Effortless</title>
     <link href="https://softheonworkshop.azureedge.net/beta-2/workshop.blue.min.css
 " rel="stylesheet" />
   </head>
   <body bgcolor=#05857A>
     <nav sws-navbar role="navigation">
     <a href="#" sws-nav__logo>
-      <!--switch logo-->
         <img src="https://developer.softheon.io/workshop/img/logo.png" alt="logo">
     </a>
 </nav>
-     <h1>Account Creation</h1>
+     <h1> <center>Create an Account</center> </h1>
     <form>
       <fieldset>
-        <legend>Information</legend>
+        <legend>User Information</legend>
         <div>
           <label><br/>Username<br/></label>
           <input type = "text"
@@ -27,8 +26,8 @@
           <input type = "password"
                   id = "myPwd"
                   value = "" />
-          <label><br/>Confirm password<br/></label>
-          <input type = "password confirm"
+          <label><br/>Confirm Password<br/></label>
+          <input type = "password"
                  id = "myPwdCfm"/>
           <label><br/>Email<br/></label>
           <input type = "email"
@@ -39,8 +38,9 @@
           <label><br/>Address<br/><input/>
         </div>
       </fieldset>
-    </form>
-    <button type="button">create account</button>
-    <script src="script.js"></script>
+    </form><br>
+	<script src="passverif.js"></script>
+    <button onclick = passStr()> Create Account</button>
+    
   </body>
 </html>
