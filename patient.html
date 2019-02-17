@@ -1,0 +1,127 @@
+<html>
+<head>
+    <link href="https://softheonworkshop.azureedge.net/beta-2/workshop.teal.min.css" rel="stylesheet">
+	<head>
+<style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+</style>
+
+<style type="text/css">
+ .optionMenu{
+   width: 1%;
+   height: 350px;
+ }
+ .optionMenu .menupanel{
+   height: 85%;
+   background-color: gray;
+   color:white;
+   text-align: center;
+   padding-top: 105px;
+   box-sizing: border-box;
+   display: none;
+ }
+</style>
+</head>
+<body>
+  <nav sws-navbar role="navigation">
+  <a href="#" sws-nav__logo>
+      <!--Change logo picture -->
+      <img src="https://developer.softheon.io/workshop/img/logo.png" alt="logo">
+  </a>
+  <ul>
+      <li>
+          <a sws-nav-link href="#">Home</a>
+      </li>
+    </ul>
+  </nav>
+    <div sws-card full-width border-box>
+        <h4 m-b-0 m-t-0>Patient</h4>
+        <img border="0" src="img_bobnye.jpg" align = "left" width="150" height="100">
+		
+		<p>
+		<label>Name: Bob Nye</label><br>
+        <label break >Address: 34 pineapple road Green Tea New York 11232</label>
+        <label break >Phone: +1 917 341 1123 </label>
+  
+
+	
+	 <div class="tab">
+  <button class="tablinks" onclick="openPanel(event, 'Diagnosis')" id="defaultOpen" sws-button-outline--primary>Diagnosis</button>
+  <button class="tablinks" onclick="openPanel(event, 'Medication')" sws-button-outline--primary>Medication</button>
+  <button class="tablinks" onclick="openPanel(event, 'Notes')" sws-button-outline--primary>Notes</button>
+  </div>
+  
+<div id="Diagnosis" class="tabcontent">
+  <h3>Diagnosis</h3>
+  <p>Patient diagnosis info.</p>
+  
+  <div class="footer">
+  <p>Footer</p>
+  </div>
+</div>
+
+<div id="Medication" class="tabcontent">
+  <h3>Medication</h3>
+  <p>Current medication info.</p>
+  
+	<div sws-checkbox>
+		<input id="test011" type="checkbox" checked="checked" />
+		<label for="test011">Check Box</label>
+	</div>
+	<div sws-checkbox>
+		<input id="test01111" type="checkbox" checked="checked" />
+		<label for="test01111">Check Box</label>
+	</div>
+	
+  <div class="footer">
+  <p>Footer</p>
+  </div>
+</div>
+
+<div id="Notes" class="tabcontent">
+  <h3>Notes</h3>
+  <p>Notes on patient.</p>
+
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+
+
+
+  
+ 
+
+<script>
+function openPanel(evt, panelName) {
+  var i, tabcontent, tablinks;
+  
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(panelName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+</body>
+</html>
