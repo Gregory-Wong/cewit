@@ -62,10 +62,7 @@
 <div id="Diagnosis" class="tabcontent">
   <h3>Diagnosis</h3>
   <p>Patient diagnosis info.</p>
-  
-  <div class="footer">
-  <p>Footer</p>
-  </div>
+  <button sws-button--regular>edit</button>
 </div>
 
 <div id="Medication" class="tabcontent">
@@ -81,25 +78,16 @@
 		<label for="test01111">Check Box</label>
 	</div>
 	
+  <button sws-button--regular>confirm</button>
   <div class="footer">
-  <p>Footer</p>
   </div>
 </div>
 
 <div id="Notes" class="tabcontent">
   <h3>Notes</h3>
   <p>Notes on patient.</p>
+  <button sws-button--regular>edit</button>
 
-
-<div class="footer">
-  <p>Footer</p>
-</div>
-
-
-
-
-  
- 
 
 <script>
 function openPanel(evt, panelName) {
@@ -116,7 +104,6 @@ function openPanel(evt, panelName) {
   document.getElementById(panelName).style.display = "block";
   evt.currentTarget.className += " active";
 }
-
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
 </script>
